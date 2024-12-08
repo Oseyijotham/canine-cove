@@ -25,7 +25,7 @@ export const useUser = () => useContext(UserContext);
 export const UserProvider = ({ children }) => {
   const dispatch = useDispatch();
   
-useEffect(() => {
+useEffect(() => { 
   dispatch(fetchVotes());
 }, [dispatch]);
   
